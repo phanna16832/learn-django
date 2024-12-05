@@ -1,11 +1,22 @@
 h4{
     color: red;
 }
-img{
+
+span{
+    color: green;
+}
+.profile{
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center vertically */
+    gap: 10px; /* Add space between the image and the text */
+}
+
+.profile img{
     width: 60px;
     height: 60px;
     border-radius: 40%;
 }
-span{
-    color: green;
+.profile h3{
+    margin: 0;
+    font-size: 10px;
 }
