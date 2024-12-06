@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="">
+            <i class="bi bi-cart"></i>
+            Shopping Cart
+          </a>
+        </li>
+        <li><a href="">Order history</a></li>
+        <li><a href="">Type of product</a></li>
+        <li><a href="">contact-us</a></li>
+      </ul>
+    </nav>
+    <!-- others navbar -->
+    <aside class="taobao-header">
+      <img src="{% static 'img/taobao-logo.png' %}" alt="" />
+      <div class="header-nav">
+        <input type="search" result="2" placeholder="search item here.." />
+        <i class="bi bi-search"></i>
+      </div>
+      <button class="btn">
+        <i class="bi bi-camera" style="width: 40px"></i>
+        find similar items
+      </button>
+    </aside>
+    <!-- header -->
+    <header class="header-container">
+      <div class="left-contain">
+        <div class="type-label">
+          <h4>Type of product</h4>
+          <div class="new-animation">New</div>
+        </div>
+        <ul class="menu-list">
+          <li>
+            <i class="bi bi-laptop"></i>
+            Computers / Accessories / Office / Stationery
+          </li>
+          <li>
+            Industrial / Business / Agriculture / Custom
+          </li>
+          <li>
+            <i class="bi bi-phone"></i>
+            Appliances / Phones / Communication / Digital
+          </li>
+          <li>
+            <img src="{% static 'img/sofa.png' %}" alt="sofa">
+            Furniture / Home Improvement / Living / Kitchen
+          </li>
+          <li>
+            <img src="{% static 'img/clothes.png' %}" alt="clothes">
+            Women's Clothing / Men's Clothing / Underwear / Accessories
+          </li>
+          <li>
+            <img src="{% static 'img/sneakers.png' %}" alt="sneakers">
+            Women's Shoes / Men's Shoes / Sports / Outdoor
+          </li>
+          <li>🚗 Cars / Jewelry / Collectibles / Bags</li>
+          <li>🍎 Food / Fresh Produce / Alcohol / Health</li>
+          <li>🍼 Baby Products / Children's Wear / Toys / Pets</li>
+          <li>💄 Beauty / Personal Care / Home Cleaning / Fragrance</li>
+          <li>🎮 Entertainment / Books / Instruments / Flowers</li>
+        </ul>
+      </div>
+      <div class="middle-container">
+        <div class="product-banner"></div>
+        <div class="product-grid">
+          <div class="product-item">
+            <img src="{% static 'img/item1.jpg' %}" alt="">
+          </div>
+          <div class="product-item">
+            <img src="{% static 'img/item2.jpg' %}" alt="">
+          </div>
+          <div class="product-item">
+            <img src="{% static 'img/item3.jpg' %}" alt="">
+          </div>
+          <div class="product-item">
+            <img src="{% static 'img/item4.jpg' %}" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="right-contain">
+        <div class="profile-info">
+          <img src="{% static 'img/profile.png' %}" alt="profile">
+          <div class="profile-text">
+            <h4>Good Afternoon</h4>
+            <h5>phannasadboi00</h5>
+          </div>
+        </div>
+        <div class="actions">
+          <span>
+            <i class="bi bi-cart"></i>
+            Shopping Cart
+          </span>
+          <span>
+            <i class="bi bi-credit-card"></i>
+            Pending Payment
+          </span>
+          <span>
+            <i class="bi bi-box"></i>
+            To be Shipped
+          </span>
+          <span>
+            <i class="bi bi-truck"></i>
+            In delivery
+          </span>
+          <span>
+            <i class="bi bi-coin"></i>
+            Refunds / Return
+          </span>
+        </div>
+      </div>
+    </header>
+    <!-- product -->
+    <main>
+      <div class="products-container" id="products-container">
+        <!-- Products will be dynamically inserted here -->
+      </div>
+    
+    </main>
+    <footer>
+      This website is used for practice code only. If you see any error please contact us . 
+      &copy; create in {{create_year}} , {year count {{year}} }
+    </footer>
+  </body>
+</html>
