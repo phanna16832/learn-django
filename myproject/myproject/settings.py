@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app']
 
+# api/settings.py
+WSGI_APPLICATION = 'myprojects.wsgi.app'
+
+
 
 # Application definition
 
